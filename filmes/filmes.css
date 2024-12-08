@@ -1,0 +1,370 @@
+/*reset*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #0f0f0f;
+}
+
+/*Fontes*/
+
+.bebas-neue-regular {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.merriweather-sans-bold{
+  font-family: "Merriweather Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+header{
+    background: radial-gradient(circle at 50% -20.71%, #ffff7b 0, #fffd61 16.67%, #ffe340 33.33%, #ffc500 50%, #eda700 66.67%, #e08d00 83.33%, #d77700 100%);
+    padding: 0px 10%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    z-index: 1000;
+    position: sticky;
+    top: 0; /*Para deixar a header grudada no topo.*/
+}
+
+.nav{
+    display: flex;
+    flex-direction: row; /* Deixar tudo implementado na nav em linha.*/
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.navBar ul{
+    list-style-type: none; /*Tirar as pontuações do lado da li.*/
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.navBar a{
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    font-size: 25px;
+    font-family: "Bebas Neue", sans-serif;
+    color: #0f0f0f;
+}
+
+.srcBar{
+    background: #fff;
+    height: 35px;
+    border-radius: 2px;
+    display: flex;
+    margin-left: auto;
+}
+
+.srcBar input{
+    margin-left: 10px;
+    border: none;
+    outline: none;
+}
+
+.srcBar button{
+    background: transparent;
+    border: none;
+}
+
+@media (max-width: 860px){
+    header{
+        padding: 0; /*Padding tirada da header para não ficar estranho pequeno ou mobile.*/
+    }
+
+    .hide, .sqr{
+        display: none;
+    }
+
+    .btn button{
+        color: whitesmoke;
+        cursor: pointer;
+        position: absolute;
+        display: flex !important; /*Todos que tiverem com importante não é para remover*/
+        justify-content: center;
+        align-items: center;
+        background: transparent;
+        border: none;
+        top: 0;
+        padding: 2%;
+        transform: scale(1.2);
+    }
+
+    .hrz{
+        display: flex !important;
+        align-items: center;
+        box-sizing: content-box;
+        padding-left: 35%; /*Único jeito de conseguir centralizar a logo, se tiver uma maneira melhor, por favor, atualizar*/
+    }
+
+    .sidebar{
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 250px;
+        z-index: 999;
+        background-color: #ffd51c59;
+        backdrop-filter: blur(10px);
+        box-shadow: -10px 0 10px rgba(0, 0, 0, 0.24);
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    
+    .sidebar li{
+        width: 100%;
+    }
+    
+    .sidebar a{
+        width: 100%;
+    }
+
+    .nav a:hover{
+        background-color: #3089ce;
+    }
+
+    .srcBar{ /*Foi configurada aqui, pois sem os li não tem margem ou configuração para ele*/
+        display: flex;
+        margin: 10px;
+        margin-left: auto;
+    }    
+}
+.trailer{
+    height: 400px;
+}
+.containerT{
+    
+    display: flex;
+    justify-content: center;
+    
+    
+}
+iframe{
+    width: 83%;
+    height:  400px;
+}
+
+
+.bloco{
+    padding-top: 3%;
+    max-width: 1400px;
+    margin: auto;
+    display: flex;
+
+}
+
+.conteudo{
+    display: flex;
+    flex-direction: column;
+    float: left;
+    margin-left: 5%;
+    width: 40%;
+    
+}
+#banner{
+    width: 200px;
+    height: 250px;
+}
+.indic{
+    color: white;
+    margin: 2px;
+    margin-top: 15px;
+}
+
+.sinopse-do-filme{
+    width: 100%;
+    text-align: left;
+    color: white;
+    margin-top: 25px;
+    text-align: justify;
+}
+.sinopse-do-filme h3{
+
+    display: inline-block;
+    padding-left: 50px;
+    color: gray;
+}
+.sinopse-do-filme h4{
+    display: inline-flex;
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+ }
+
+h1{
+    color: white;
+    
+}
+.horarios{
+    margin-left: 5%;
+    color: white;
+    
+}
+.horarios h1 {
+    font-size: 40px;
+}
+.Sessao{
+    color: rgb(168, 168, 168);
+    margin-top: 20px;
+    font-size: 12px;
+}
+.data{
+    color: white;
+    font-size: 12px;
+   
+}
+.dia{
+    background-color: rgb(32, 32, 32);
+    font-size: 0,5em;
+    color: white;
+    padding: 7%;
+    margin-top: 25px;
+    border-radius: 25px;
+    display: inline-flex;
+}
+#dia1{
+    background-color: rgb(32, 32, 32);
+    font-size: 0,5em;
+
+    color: white;
+    padding: 7%;
+    margin-top: 25px;
+    border-radius: 25px;
+    display: inline-flex;
+    
+}
+#dia2{
+    background-color: rgb(32, 32, 32);
+    font-size: 18px;
+    color: white;
+    padding: 7%;
+    margin-top: 25px;
+    margin-left: 25px;
+    border-radius: 25px;
+    display: inline-flex;
+}
+#dia3{
+    background-color: rgb(32, 32, 32);
+    font-size: 18px;
+    color: white;
+    padding: 7%;
+    margin-top: 25px;
+    margin-left: 50px;
+    border-radius: 25px;
+    display: inline-flex;
+}
+#tituloH{
+    padding-top: 50px;
+}
+#SalvadorS{
+    color: red;
+    text-decoration: none;
+    font-size: 0,1em ;
+    
+}
+.fin{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px 20px 20px;
+}
+
+.fin ul{
+    list-style-type: none;
+    display: block;
+    margin-bottom: auto;
+    align-items: center;
+    padding: 20px;
+}
+
+.fin li{
+    padding: 5px;
+}
+
+.fin h3{
+    color: whitesmoke;
+    font-size: 1.4em;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.fin a{
+    text-decoration: none;
+    font-family: "Merriweather Sans", sans-serif;
+    color: aliceblue;
+    font-size: 0.9em;
+}
+
+.fin a:hover{
+    text-decoration: underline;
+}
+
+.imagens{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.imagens img{
+    width: 14em;
+}
+footer{
+    width: 100%;
+    padding: 0px 4%;
+    padding-top: 5%;
+    bottom: 0;
+    background-color: #0f0f0f;
+    color: aliceblue;
+    font-family: "Merriweather Sans", sans-serif;
+}
+
+.direitos{
+    font-size: 13px;
+    padding: 30px 15px 30px 15px;
+    border-top: 1px #404040 solid;
+}
+
+.membros{
+    border-top: 1px #404040 solid;
+    display: flex;
+    padding: 30px 15px 30px 15px;
+    justify-content: space-between;
+    font-size: 13px;
+    a{
+        color: aliceblue;
+        text-decoration: none;
+        margin-left: 20px;
+        margin-right: 5px;
+    }
+    a:hover{
+        text-decoration: underline;
+        color: aliceblue;
+    }
+}
+
+.membros ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+@media (max-width: 860px){
+    .imagens{
+        display: none;
+    }
+
+    .membros ul{
+        display: grid;
+    }
+}
